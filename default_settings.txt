@@ -3,7 +3,7 @@
 #
 
 ## Scenario settings
-Scenario.name = default_scenario_%%MovementModel.rngSeed%%
+Scenario.name = %%Group.router%%_%%MovementModel.rngSeed%%
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 Scenario.endTime = 172800
@@ -28,7 +28,7 @@ highspeedInterface.scanInterval = 64
 
 # Common settings for all groups
 Group.movementModel = ShortestPathMapBasedMovement
-Group.router = EpidemicRouter
+Group.router = SprayAndWaitRouter
 
 ##Begin energy module settings#####################################################################
 ##Important: The energy expenditure is assigned to groups and not to each diferent interface
@@ -39,7 +39,7 @@ Group.rechargeEnergy = 0
 #range of random recharge in seconds. (0, 0 = no random recharge. 0, 1000 = random recharge for each node in this range). Different values ​​can be used by #group.
 Group.rechargeEnergyRandom = 0, 0
 # Initial value of energy - batery full. (Different values ​​can be used by group)
-Group.initialEnergy = 100
+Group.initialEnergy = 1
 # Energy expenditure by scan. (Different values ​​can be used by group)
 Group.scanEnergy = 0
 # Energy expenditure per second when sending data. (Different values ​​can be used by group)
@@ -74,9 +74,11 @@ Group2.okMaps = 1
 # 10-50 km/h
 Group2.speed = 2.7, 13.9
 # Initial value of energy - batery full. (Different values ​​can be used by group)
-Group2.initialEnergy = 232000
+# Baseado em um Tesla Model S 75D (em Wh)
+Group2.initialEnergy = 75000
+# Consumo de energia em W/s
 # Energy expenditure by scan. (Different values ​​can be used by group)
-Group2.scanEnergy = 0.92
+Group2.scanEnergy = 0.93
 # Energy expenditure per second when sending data. (Different values ​​can be used by group)
 Group2.transmitEnergy = 0.08
 #Energy expenditure  per second when receiving data. (Different values ​​can be used by group)
@@ -140,7 +142,7 @@ MovementModel.rngSeed = 1
 # World's size for Movement Models without implicit size (width, height; meters)
 MovementModel.worldSize = 4500, 3400
 # How long time to move hosts in the world before real simulation
-MovementModel.warmup = 1000
+MovementModel.warmup = 0
 
 ## Map based movement -movement model specific settings
 MapBasedMovement.nrofMapFiles = 4
@@ -159,19 +161,21 @@ PointsOfInterest.poiFile4 = data/shops.wkt
 ## Reports - all report names have to be valid report classes
 
 # how many reports to load
-Report.nrofReports = 3
+Report.nrofReports = 7
 # default directory of reports (can be overriden per Report with output setting)
 Report.reportDir = reports/
 # Report classes to load
 Report.report1 = MessageStatsReport
-#Report.report2 = CreatedMessagesReport
-#Report.report2 = DeliveredMessagesReport
-#Report.report4 = EventLogReport
-Report.report3 = MessageDeliveryReport
-#Report.report6 = MessageReport
-Report.report2 = EnergyLevelReport
+Report.report2 = MessageDelayReport
+Report.report3 = DeliveredMessagesReport
+Report.report4 = EventLogReport
+Report.report5 = MessageDeliveryReport
+Report.report6 = MessageReport
+Report.report7 = EnergyLevelReport
 
-Report.granularity = 100
+# Relatório a cada 10min
+Report.granularity = 600
+# Relatório de energia a cada 1h
 EnergyLevelReport.granularity = 3600
 
 ## Default settings for some routers settings
