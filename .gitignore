@@ -1,3 +1,7 @@
+### Projeto ###
+/target/
+/reports/
+/doc/
 
 # Created by https://www.gitignore.io/api/java,intellij
 
@@ -36,8 +40,6 @@ cmake-build-debug/
 
 # IntelliJ
 /out/
-/target/
-/reports/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
