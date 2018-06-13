@@ -4,11 +4,11 @@
  */
 package report;
 
-import java.util.List;
-
 import core.ConnectionListener;
 import core.DTNHost;
 import core.UpdateListener;
+
+import java.util.List;
 
 /**
  * A report of the distribution of how many encounters (contacts) a node has had

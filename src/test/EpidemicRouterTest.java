@@ -4,10 +4,10 @@
  */
 package test;
 
-import routing.EpidemicRouter;
-import routing.MessageRouter;
 import core.DTNHost;
 import core.Message;
+import routing.EpidemicRouter;
+import routing.MessageRouter;
 
 /**
  * Tests for EpidemicRouter and, due the simple nature of Epidemic router,

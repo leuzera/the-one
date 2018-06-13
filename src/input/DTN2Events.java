@@ -5,6 +5,10 @@
 
 package input;
 
+import core.DTN2Manager;
+import core.Debug;
+import core.Settings;
+import core.SimClock;
 import fi.tkk.netlab.dtn.DTNConsoleConnection;
 import fi.tkk.netlab.dtn.ecla.Bundle;
 import fi.tkk.netlab.dtn.ecla.CLAInterface;
@@ -14,16 +18,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
-
-import core.DTN2Manager;
-import core.Debug;
-import core.Settings;
-import core.SimClock;
+import java.util.*;
 
 import static core.Constants.DEBUG;
 

@@ -4,6 +4,10 @@
  */
 package input;
 
+import core.Coord;
+import movement.map.MapNode;
+import movement.map.SimMap;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,10 +16,6 @@ import java.util.Collection;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
-
-import movement.map.MapNode;
-import movement.map.SimMap;
-import core.Coord;
 
 /**
  * "Well-known text syntax" map data reader.<BR>

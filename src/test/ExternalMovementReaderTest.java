@@ -4,16 +4,14 @@
  */
 package test;
 
+import core.Coord;
 import input.ExternalMovementReader;
+import junit.framework.TestCase;
+import util.Tuple;
 
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.List;
-
-import util.Tuple;
-
-import junit.framework.TestCase;
-import core.Coord;
 
 public class ExternalMovementReaderTest extends TestCase {
 	private ExternalMovementReader r;

@@ -4,9 +4,9 @@
  */
 package test;
 
+import core.SettingsError;
 import junit.framework.Test;
 import junit.framework.TestSuite;
-import core.SettingsError;
 
 public class AllTests {
 

@@ -4,8 +4,8 @@
  */
 package test;
 
-import junit.framework.TestCase;
 import core.Coord;
+import junit.framework.TestCase;
 
 public class CoordTest extends TestCase {
 

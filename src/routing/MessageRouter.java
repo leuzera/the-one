@@ -4,24 +4,11 @@
  */
 package routing;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
-import core.Application;
-import core.Connection;
-import core.DTNHost;
-import core.Message;
-import core.MessageListener;
-import core.Settings;
-import core.SettingsError;
-import core.SimClock;
-import core.SimError;
+import core.*;
 import routing.util.RoutingInfo;
 import util.Tuple;
+
+import java.util.*;
 
 /**
  * Superclass for message routers.

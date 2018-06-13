@@ -4,10 +4,10 @@
  */
 package routing;
 
+import core.*;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import core.*;
 
 import static core.Constants.DEBUG;
 

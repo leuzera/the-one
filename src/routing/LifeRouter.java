@@ -4,12 +4,12 @@
  */
 package routing;
 
-import java.util.Vector;
-
+import core.Connection;
 import core.DTNHost;
 import core.Message;
 import core.Settings;
-import core.Connection;
+
+import java.util.Vector;
 
 /**
  * Router module mimicking the game-of-life behavior

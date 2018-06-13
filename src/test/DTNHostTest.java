@@ -1,25 +1,17 @@
 package test;
 
 
-import core.Coord;
-import core.DTNHost;
-import core.MessageListener;
-import core.MovementListener;
-import core.NetworkInterface;
-import core.Settings;
+import core.*;
+import junit.framework.TestCase;
 import movement.MovementModel;
 import movement.Path;
-
-import org.junit.Test;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-
+import org.junit.Test;
 import routing.MessageRouter;
 import routing.PassiveRouter;
 
 import java.util.ArrayList;
-
-import junit.framework.TestCase;
 
 /**
  * @author teemuk

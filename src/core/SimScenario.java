@@ -6,15 +6,14 @@ package core;
 
 import input.EventQueue;
 import input.EventQueueHandler;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import movement.MapBasedMovement;
 import movement.MovementModel;
 import movement.map.SimMap;
 import routing.MessageRouter;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simulation scenario used for getting and storing the settings of a

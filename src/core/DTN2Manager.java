@@ -5,7 +5,10 @@
 
 package core;
 
+import fi.tkk.netlab.dtn.ecla.Bundle;
+import fi.tkk.netlab.dtn.ecla.CLAParser;
 import input.DTN2Events;
+import report.DTN2Reporter;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,10 +18,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
-
-import report.DTN2Reporter;
-import fi.tkk.netlab.dtn.ecla.Bundle;
-import fi.tkk.netlab.dtn.ecla.CLAParser;
 
 import static core.Constants.DEBUG;
 

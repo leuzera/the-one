@@ -4,12 +4,12 @@
  */
 package util;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 import core.Settings;
 import core.SettingsError;
 import core.SimClock;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Object of this class tell the models when a node belonging

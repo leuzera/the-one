@@ -4,9 +4,9 @@
  */
 package test;
 
+import core.Coord;
 import movement.MovementModel;
 import movement.Path;
-import core.Coord;
 
 /**
  * A dummy stationary "movement" model where nodes do not move for testing

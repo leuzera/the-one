@@ -4,19 +4,12 @@
  */
 package gui;
 
-import gui.playfield.PlayField;
-
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-
-import javax.swing.BoxLayout;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-
 import core.Settings;
 import core.World;
+import gui.playfield.PlayField;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Main window for the program. Takes care of layouting the main components

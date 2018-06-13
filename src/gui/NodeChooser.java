@@ -4,26 +4,20 @@
  */
 package gui;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import core.DTNHost;
+import core.Settings;
+import gui.nodefilter.NodeFilter;
+import gui.nodefilter.NodeMessageFilter;
+import gui.playfield.NodeGraphic;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JPanel;
-import javax.swing.Timer;
-
-import gui.nodefilter.*;
-import gui.playfield.NodeGraphic;
-import core.DTNHost;
-import core.Settings;
 
 /**
  * Node chooser panel

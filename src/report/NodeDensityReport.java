@@ -1,10 +1,6 @@
 package report;
 
-import core.Coord;
-import core.DTNHost;
-import core.Settings;
-import core.SettingsError;
-import core.SimScenario;
+import core.*;
 
 import java.util.ArrayList;
 import java.util.List;

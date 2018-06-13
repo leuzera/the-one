@@ -4,13 +4,12 @@
  */
 package test;
 
-import input.EventQueueHandler;
-
-import java.util.Properties;
-
-import movement.MovementModel;
 import core.SettingsError;
 import core.SimScenario;
+import input.EventQueueHandler;
+import movement.MovementModel;
+
+import java.util.Properties;
 
 /**
  * Class for replacing Settings class in tests.

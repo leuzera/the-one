@@ -6,7 +6,6 @@ package test;
 
 import core.CBRConnection;
 import core.Connection;
-import core.DTNHost;
 import core.NetworkInterface;
 import core.Settings;
 

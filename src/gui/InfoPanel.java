@@ -4,19 +4,15 @@
  */
 package gui;
 
+import core.DTNHost;
+import core.Message;
+import movement.Path;
+
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Collections;
 import java.util.Vector;
-
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
-import movement.Path;
-import core.DTNHost;
-import core.Message;
 
 /**
  * Information panel that shows data of selected messages and nodes.

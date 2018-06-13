@@ -4,19 +4,15 @@
  */
 package test;
 
+import core.*;
+import junit.framework.TestCase;
+import report.DistanceDelayReport;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
-
-import junit.framework.TestCase;
-import report.DistanceDelayReport;
-import core.Coord;
-import core.DTNHost;
-import core.Message;
-import core.MessageListener;
-import core.SimClock;
 
 public class DistanceDelayReportTest extends TestCase {
 	private SimClock clock;

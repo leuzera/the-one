@@ -4,20 +4,20 @@
  */
 package test;
 
+import core.ConnectionListener;
+import core.Coord;
+import core.DTNHost;
+import core.SimClock;
+import junit.framework.TestCase;
+import report.ContactTimesReport;
+import report.InterContactTimesReport;
+import report.Report;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
-
-import junit.framework.TestCase;
-import report.ContactTimesReport;
-import report.InterContactTimesReport;
-import report.Report;
-import core.ConnectionListener;
-import core.Coord;
-import core.DTNHost;
-import core.SimClock;
 
 /**
  * Test cases for ContactTimes & InterContactTimesReports.

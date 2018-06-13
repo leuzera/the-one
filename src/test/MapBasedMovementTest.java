@@ -4,23 +4,22 @@
  */
 package test;
 
+import core.Coord;
+import core.DTNHost;
+import core.Settings;
 import input.WKTMapReader;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.util.List;
-
 import junit.framework.TestCase;
 import movement.MapBasedMovement;
 import movement.MovementModel;
 import movement.Path;
 import movement.map.MapNode;
 import movement.map.SimMap;
-import core.Coord;
-import core.DTNHost;
-import core.Settings;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringReader;
+import java.util.List;
 
 public class MapBasedMovementTest extends TestCase {
 	/* Topology:  n7--n5

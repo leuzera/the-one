@@ -4,14 +4,14 @@
  */
 package report;
 
+import core.DTNHost;
+import core.Message;
+import core.MessageListener;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import core.DTNHost;
-import core.Message;
-import core.MessageListener;
 
 /**
  * Report for generating different kind of total statistics about message

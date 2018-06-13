@@ -4,21 +4,16 @@
  */
 package test;
 
+import core.Coord;
+import core.Settings;
 import input.WKTMapReader;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.util.Random;
-
 import junit.framework.TestCase;
 import movement.map.MapNode;
 import movement.map.PointsOfInterest;
 import movement.map.SimMap;
-import core.Coord;
-import core.Settings;
+
+import java.io.*;
+import java.util.Random;
 
 /**
  * Test for selecting Points Of Interest from different node groups.

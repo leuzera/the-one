@@ -6,25 +6,11 @@
  */
 package routing;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import java.util.Random;
-
+import core.*;
 import routing.util.RoutingInfo;
-
-
-import core.Connection;
-import core.DTNHost;
-import core.Message;
-import core.Settings;
-import core.SimClock;
 import util.Tuple;
+
+import java.util.*;
 
 /**
  * Implementation of PRoPHETv2" router as described in

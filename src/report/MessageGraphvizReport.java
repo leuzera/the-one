@@ -4,12 +4,12 @@
  */
 package report;
 
-import java.util.List;
-import java.util.Vector;
-
 import core.DTNHost;
 import core.Message;
 import core.MessageListener;
+
+import java.util.List;
+import java.util.Vector;
 
 /**
  * Creates a graphviz compatible graph of messages that were passed.

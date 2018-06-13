@@ -4,17 +4,12 @@
  */
 package routing;
 
+import core.*;
+import routing.util.RoutingInfo;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import routing.util.RoutingInfo;
-
-import core.Connection;
-import core.DTNHost;
-import core.Message;
-import core.Settings;
-import core.SimClock;
 
 /**
  * Epidemic-like message router making waves of messages.

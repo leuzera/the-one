@@ -4,16 +4,11 @@
  */
 package test;
 
+import core.*;
+import junit.framework.TestCase;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import junit.framework.TestCase;
-import core.CBRConnection;
-import core.DTNHost;
-import core.Message;
-import core.NetworkInterface;
-import core.ModuleCommunicationBus;
-import core.SimClock;
 
 /**
  * Some tests for the Connection class.

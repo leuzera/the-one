@@ -4,10 +4,10 @@
  */
 package input;
 
-import java.util.Random;
-
 import core.Settings;
 import core.SettingsError;
+
+import java.util.Random;
 
 /**
  * Message creation -external events generator. Creates uniformly distributed

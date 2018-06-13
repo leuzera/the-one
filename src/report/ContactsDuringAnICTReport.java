@@ -4,13 +4,13 @@
  */
 package report;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-
 import core.ConnectionListener;
 import core.DTNHost;
 import core.UpdateListener;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * The number of contacts during an inter-contact time metric is similar to

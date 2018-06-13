@@ -1,10 +1,6 @@
 package report;
 
-import core.DTNHost;
-import core.Settings;
-import core.SettingsError;
-import core.SimClock;
-import core.UpdateListener;
+import core.*;
 
 import java.util.List;
 

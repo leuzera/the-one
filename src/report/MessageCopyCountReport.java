@@ -4,14 +4,10 @@
  */
 package report;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import core.DTNHost;
 import core.Message;
+
+import java.util.*;
 
 /**
  * Reports the amount of messages in the system at each time interval. Uses the

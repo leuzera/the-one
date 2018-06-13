@@ -4,17 +4,12 @@
  */
 package test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import core.DTNHost;
 import junit.framework.TestCase;
 import routing.maxprop.MaxPropDijkstra;
 import routing.maxprop.MeetingProbabilitySet;
-import core.DTNHost;
+
+import java.util.*;
 
 /**
  * Tests for MaxProp's shortest path calculation class.

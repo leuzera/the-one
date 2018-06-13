@@ -4,10 +4,10 @@
  */
 package input;
 
+import core.Settings;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import core.Settings;
 
 /**
  * <p>

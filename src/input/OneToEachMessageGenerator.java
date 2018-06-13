@@ -4,12 +4,12 @@
  */
 package input;
 
+import core.Settings;
+import core.SettingsError;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import core.Settings;
-import core.SettingsError;
 
 /**
  * Message creation -external events generator. Creates one message from

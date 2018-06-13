@@ -4,6 +4,12 @@
  */
 package test;
 
+import core.ConnectionListener;
+import core.Coord;
+import core.DTNHost;
+import junit.framework.TestCase;
+import report.AdjacencyGraphvizReport;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -12,12 +18,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
-
-import junit.framework.TestCase;
-import report.AdjacencyGraphvizReport;
-import core.ConnectionListener;
-import core.Coord;
-import core.DTNHost;
 
 public class AdjacencyGraphvizReportTest extends TestCase {
 	private File outFile;

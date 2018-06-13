@@ -4,11 +4,11 @@
  */
 package report;
 
-import java.util.List;
-
 import core.ConnectionListener;
 import core.DTNHost;
 import core.UpdateListener;
+
+import java.util.List;
 
 /**
  * The total- vs. the unique encounters for each node

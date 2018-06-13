@@ -18,12 +18,13 @@ package report;
  *
  * @author	teemuk
  */
-import java.util.List;
 
 import core.DTNHost;
 import core.Settings;
 import core.SimClock;
 import core.UpdateListener;
+
+import java.util.List;
 
 public class BufferOccupancyReport extends Report implements UpdateListener {
 

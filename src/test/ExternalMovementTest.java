@@ -4,15 +4,15 @@
  */
 package test;
 
-import java.io.File;
-import java.io.PrintWriter;
-
-import junit.framework.TestCase;
-import movement.ExternalMovement;
-import movement.MovementModel;
 import core.Coord;
 import core.DTNHost;
 import core.SimClock;
+import junit.framework.TestCase;
+import movement.ExternalMovement;
+import movement.MovementModel;
+
+import java.io.File;
+import java.io.PrintWriter;
 
 public class ExternalMovementTest extends TestCase {
 	/* two nodes moving */

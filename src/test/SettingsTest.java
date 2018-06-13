@@ -4,11 +4,11 @@
  */
 package test;
 
+import core.Settings;
+import junit.framework.TestCase;
+
 import java.io.File;
 import java.io.PrintWriter;
-
-import junit.framework.TestCase;
-import core.Settings;
 
 /**
  * Tests Settings class' different setting getting methods

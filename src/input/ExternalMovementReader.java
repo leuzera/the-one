@@ -4,16 +4,15 @@
  */
 package input;
 
+import core.Coord;
+import core.SettingsError;
+import util.Tuple;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import util.Tuple;
-
-import core.Coord;
-import core.SettingsError;
 
 
 /**

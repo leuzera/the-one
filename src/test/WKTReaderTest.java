@@ -4,21 +4,15 @@
  */
 package test;
 
+import core.Coord;
 import input.WKTMapReader;
-
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Reader;
-import java.io.StringReader;
-import java.util.Collection;
-import java.util.Map;
-
 import junit.framework.TestCase;
 import movement.map.MapNode;
 import movement.map.SimMap;
-import core.Coord;
+
+import java.io.*;
+import java.util.Collection;
+import java.util.Map;
 
 public class WKTReaderTest extends TestCase {
 	private WKTMapReader reader;

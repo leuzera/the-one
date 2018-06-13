@@ -4,12 +4,12 @@
  */
 package input;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import core.DTNHost;
 import core.Message;
 import core.World;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * External event for deleting a message.

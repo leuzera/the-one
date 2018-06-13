@@ -4,12 +4,12 @@
  */
 package report;
 
-import java.util.HashMap;
-import java.util.Vector;
-
 import core.ConnectionListener;
 import core.DTNHost;
 import core.Settings;
+
+import java.util.HashMap;
+import java.util.Vector;
 
 /**
  * Reports the node contact time (i.e., how long they were in the range

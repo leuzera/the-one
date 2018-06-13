@@ -4,20 +4,10 @@
  */
 package ui;
 
-import java.util.Vector;
-
+import core.*;
 import report.Report;
-import core.ApplicationListener;
-import core.ConnectionListener;
-import core.MessageListener;
-import core.MovementListener;
-import core.Settings;
-import core.SettingsError;
-import core.SimClock;
-import core.SimError;
-import core.SimScenario;
-import core.UpdateListener;
-import core.World;
+
+import java.util.Vector;
 
 /**
  * Abstract superclass for user interfaces; contains also some simulation

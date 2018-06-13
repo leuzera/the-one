@@ -6,14 +6,12 @@ package core;
 
 import interfaces.ConnectivityGrid;
 import interfaces.ConnectivityOptimizer;
+import routing.util.EnergyModel;
+import util.ActivenessHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import routing.util.EnergyModel;
-
-import util.ActivenessHandler;
 
 /**
  * Network interface of a DTNHost. Takes care of connectivity among hosts.

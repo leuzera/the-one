@@ -4,12 +4,12 @@
  */
 package report;
 
-import java.util.HashSet;
-import java.util.List;
-
 import core.DTNHost;
 import core.Settings;
 import core.UpdateListener;
+
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * Node snapshot report superclass. Reports some characteristic of all 

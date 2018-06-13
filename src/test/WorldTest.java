@@ -4,18 +4,12 @@
  */
 package test;
 
+import core.*;
 import input.EventQueue;
+import junit.framework.TestCase;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import junit.framework.TestCase;
-import core.DTNHost;
-import core.ModuleCommunicationBus;
-import core.NetworkInterface;
-import core.SimClock;
-import core.UpdateListener;
-import core.World;
 
 
 /**

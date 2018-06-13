@@ -4,12 +4,12 @@
  */
 package report;
 
-import java.util.HashMap;
-
 import core.Coord;
 import core.DTNHost;
 import core.Message;
 import core.MessageListener;
+
+import java.util.HashMap;
 
 /**
  * Report for how far apart the nodes were when the message

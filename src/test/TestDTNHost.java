@@ -4,16 +4,10 @@
  */
 package test;
 
-import java.util.List;
-
+import core.*;
 import routing.PassiveRouter;
-import core.Coord;
-import core.DTNHost;
-import core.Message;
-import core.ModuleCommunicationBus;
-import core.NetworkInterface;
-import core.Settings;
-import core.SimClock;
+
+import java.util.List;
 
 /**
  * A test stub of DTNHost for testing. All fields are public so they can be

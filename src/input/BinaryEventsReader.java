@@ -4,16 +4,11 @@
  */
 package input;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import core.SimError;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import core.SimError;
 
 /**
  * Reads External Events from a binary file. Can also create binary files

@@ -4,9 +4,9 @@
  */
 package test;
 
+import core.Message;
 import routing.MessageRouter;
 import routing.ProphetRouter;
-import core.Message;
 
 /**
  * Tests for PRoPHET router

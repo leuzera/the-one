@@ -4,11 +4,11 @@
  */
 package report;
 
-import java.util.List;
-
 import core.ConnectionListener;
 import core.DTNHost;
 import core.UpdateListener;
+
+import java.util.List;
 
 /**
  * UniqueEncountersReport class creates a report of the distribution of how

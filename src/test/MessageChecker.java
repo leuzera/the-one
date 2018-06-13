@@ -4,11 +4,11 @@
  */
 package test;
 
-import java.util.ArrayList;
-
 import core.DTNHost;
 import core.Message;
 import core.MessageListener;
+
+import java.util.ArrayList;
 
 /**
  * Message event checker for tests.

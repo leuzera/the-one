@@ -4,13 +4,13 @@
  */
 package test;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import core.Coord;
 import junit.framework.TestCase;
 import movement.map.MapNode;
 import movement.map.SimMap;
-import core.Coord;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MapNodeTest extends TestCase {
 	private MapNode n1,n2,n3,n4;

@@ -4,16 +4,12 @@
  */
 package report;
 
+import core.*;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-
-import core.Connection;
-import core.DTNHost;
-import core.Message;
-import core.Settings;
-import core.SettingsError;
 
 /**
  * Reports which messages are available (either in the buffer or at one

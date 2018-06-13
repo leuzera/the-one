@@ -4,10 +4,10 @@
  */
 package report;
 
-import java.util.List;
-
 import core.DTNHost;
 import core.UpdateListener;
+
+import java.util.List;
 
 /**
  * Report for total amount of contact times among hosts. Reports how long all

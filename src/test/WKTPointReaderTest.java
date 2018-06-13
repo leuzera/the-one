@@ -4,13 +4,12 @@
  */
 package test;
 
+import core.Coord;
 import input.WKTReader;
+import junit.framework.TestCase;
 
 import java.io.StringReader;
 import java.util.List;
-
-import junit.framework.TestCase;
-import core.Coord;
 
 public class WKTPointReaderTest extends TestCase {
 

@@ -4,12 +4,12 @@
  */
 package test;
 
-import java.util.List;
-
-import routing.schedule.ScheduleDijkstra;
-import routing.schedule.ScheduleOracle;
-import routing.schedule.ScheduleEntry;
 import junit.framework.TestCase;
+import routing.schedule.ScheduleDijkstra;
+import routing.schedule.ScheduleEntry;
+import routing.schedule.ScheduleOracle;
+
+import java.util.List;
 
 public class ScheduleDijkstraTest extends TestCase {
 

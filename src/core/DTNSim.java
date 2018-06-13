@@ -3,13 +3,13 @@
  * Released under GPLv3. See LICENSE.txt for details.
  */
 package core;
+
 import gui.DTNSimGUI;
+import ui.DTNSimTextUI;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-
-import ui.DTNSimTextUI;
 
 /**
  * Simulator's main class

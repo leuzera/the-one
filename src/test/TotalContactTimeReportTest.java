@@ -4,18 +4,18 @@
  */
 package test;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.util.Vector;
-
-import junit.framework.TestCase;
-import report.Report;
-import report.TotalContactTimeReport;
 import core.ConnectionListener;
 import core.Coord;
 import core.DTNHost;
 import core.SimClock;
+import junit.framework.TestCase;
+import report.Report;
+import report.TotalContactTimeReport;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.Vector;
 
 public class TotalContactTimeReportTest extends TestCase {
 	private BufferedReader ctReader;

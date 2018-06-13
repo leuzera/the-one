@@ -4,12 +4,12 @@
  */
 package report;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import core.DTNHost;
 import core.Message;
 import core.MessageListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Reports delivered messages' delays (one line per delivered message)

@@ -4,27 +4,13 @@
  */
 package gui;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.Insets;
+import core.*;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.Timer;
-
-import core.ConnectionListener;
-import core.DTNHost;
-import core.Message;
-import core.MessageListener;
-import core.Settings;
-import core.SimClock;
 
 /**
  * Event log panel where log entries are displayed.

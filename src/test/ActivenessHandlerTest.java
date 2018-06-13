@@ -4,9 +4,9 @@
  */
 package test;
 
-import util.ActivenessHandler;
-import junit.framework.TestCase;
 import core.SimClock;
+import junit.framework.TestCase;
+import util.ActivenessHandler;
 
 public class ActivenessHandlerTest extends TestCase {
 	private ActivenessHandler ah;

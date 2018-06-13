@@ -4,14 +4,12 @@
  */
 package test;
 
-import junit.framework.TestCase;
-
-import org.junit.Before;
-import org.junit.Test;
-
 import core.DTNHost;
 import core.Message;
 import core.SimClock;
+import junit.framework.TestCase;
+import org.junit.Before;
+import org.junit.Test;
 
 public class MessageTest extends TestCase {
 

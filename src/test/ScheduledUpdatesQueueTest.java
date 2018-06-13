@@ -4,9 +4,9 @@
  */
 package test;
 
+import core.SimClock;
 import input.ScheduledUpdatesQueue;
 import junit.framework.TestCase;
-import core.SimClock;
 
 /**
  * Tests for the ScheduledUpdatesQueue

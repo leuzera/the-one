@@ -4,18 +4,12 @@
  */
 package test;
 
-import input.BinaryEventsReader;
-import input.ExternalEvent;
-import input.ExternalEventsQueue;
-import input.ExternalEventsReader;
-import input.MessageCreateEvent;
-import input.StandardEventsReader;
+import input.*;
+import junit.framework.TestCase;
 
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.List;
-
-import junit.framework.TestCase;
 
 public class ExternalEventsQueueTest extends TestCase {
 	private final String[] stdinput = {

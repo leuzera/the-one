@@ -4,11 +4,11 @@
  */
 package input;
 
+import core.Settings;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
-import core.Settings;
 
 /**
  * Queue of external events. This class also takes care of buffering

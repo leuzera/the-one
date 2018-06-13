@@ -4,12 +4,12 @@
  */
 package report;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-
 import core.ConnectionListener;
 import core.DTNHost;
 import core.SimClock;
+
+import java.util.Iterator;
+import java.util.LinkedList;
 
 /**
  * This report counts the number of contacts each hour

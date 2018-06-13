@@ -4,11 +4,11 @@
  */
 package test;
 
-import routing.MaxPropRouter;
-import routing.MessageRouter;
 import core.DTNHost;
 import core.Message;
 import core.SimScenario;
+import routing.MaxPropRouter;
+import routing.MessageRouter;
 
 /**
  * Tests for the MaxProp routing module

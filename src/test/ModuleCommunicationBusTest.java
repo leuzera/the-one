@@ -4,13 +4,11 @@
  */
 package test;
 
-import junit.framework.TestCase;
-
-import org.junit.Before;
-import org.junit.Test;
-
 import core.ModuleCommunicationBus;
 import core.ModuleCommunicationListener;
+import junit.framework.TestCase;
+import org.junit.Before;
+import org.junit.Test;
 
 public class ModuleCommunicationBusTest extends TestCase {
 
