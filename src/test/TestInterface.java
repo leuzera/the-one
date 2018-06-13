@@ -79,9 +79,8 @@ public class TestInterface extends NetworkInterface {
 
 	/**
 	 * Creates a connection to another host. This method does not do any checks
-	 * on whether the other node is in range or active
-	 * (cf. {@link #connect(DTNHost)}).
-	 * @param anotherHost The host to create the connection to
+	 * on whether the other node is in range or active.
+	 * @param anotherInterface The interface to create the connection to
 	 */
 	public void createConnection(NetworkInterface anotherInterface) {
 		connect(anotherInterface);
