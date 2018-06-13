@@ -4,7 +4,11 @@
  */
 package movement.map;
 
+import core.Coord;
+import core.Settings;
+import core.SettingsError;
 import input.WKTReader;
+import util.Tuple;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,12 +16,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-
-import util.Tuple;
-
-import core.Coord;
-import core.Settings;
-import core.SettingsError;
 
 /**
  * Handler for points of interest data.

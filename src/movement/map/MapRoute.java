@@ -4,15 +4,14 @@
  */
 package movement.map;
 
+import core.Coord;
+import core.SettingsError;
 import input.WKTReader;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import core.Coord;
-import core.SettingsError;
 
 /**
  * A route that consists of map nodes. There can be different kind of routes

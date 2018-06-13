@@ -4,12 +4,12 @@
  */
 package movement.map;
 
+import core.Coord;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import core.Coord;
 
 /**
  * A simulation map for node movement.
