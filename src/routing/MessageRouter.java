@@ -95,6 +95,9 @@ public abstract class MessageRouter {
      */
     public static final int DENIED_UNSPECIFIED = -99;
 
+    /** ADDED FOR TEST*/
+    public static final int DENIED_DELIVERED = -4;
+
     private List<MessageListener> mListeners;
     /**
      * The messages being transferred with msgID_hostName keys
