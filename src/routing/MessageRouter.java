@@ -95,7 +95,10 @@ public abstract class MessageRouter {
      */
     public static final int DENIED_UNSPECIFIED = -99;
 
-    private List<MessageListener> mListeners;
+    /** ADDED FOR TEST*/
+    public static final int DENIED_DELIVERED = -4;
+
+    public List<MessageListener> mListeners;
     /**
      * The messages being transferred with msgID_hostName keys
      */
@@ -107,7 +110,7 @@ public abstract class MessageRouter {
     /**
      * The messages this router has received as the final recipient
      */
-    private HashMap<String, Message> deliveredMessages;
+    public HashMap<String, Message> deliveredMessages;
     /**
      * The messages that Applications on this router have blacklisted
      */
