@@ -6,11 +6,15 @@
  */
 package routing.community;
 
-import java.util.*;
+import core.DTNHost;
+import core.Settings;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 //import routing.communitydetection.DiBuBB.Duration;
-
-import core.*;
 
 /**
  * <p>Performs the SIMPLE Community Detection algorithm described in 

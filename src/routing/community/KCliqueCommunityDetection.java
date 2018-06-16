@@ -5,11 +5,12 @@
  */
 package routing.community;
 
+import core.DTNHost;
+import core.Settings;
+
 import java.util.*;
 
 //import routing.communitydetection.DiBuBB.Duration;
-
-import core.*;
 
 /**
  * <p>Performs the K-Clique Community Detection algorithm described in 

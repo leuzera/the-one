@@ -6,10 +6,12 @@
  */
 package routing.community;
 
+import core.DTNHost;
+import core.Settings;
+import core.SimClock;
+
 import java.util.List;
 import java.util.Map;
-
-import core.*;
 
 /**
  * <p>Computes the centrality of a node using the SWindow centrality algorithm 

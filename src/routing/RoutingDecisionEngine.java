@@ -22,7 +22,9 @@
 
 package routing;
 
-import core.*;
+import core.Connection;
+import core.DTNHost;
+import core.Message;
 
 /**
  * Defines the interface between DecisionEngineRouter and its decision making

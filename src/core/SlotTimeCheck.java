@@ -21,11 +21,11 @@
 
 package core;
 
+import routing.DecisionEngineRouter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
-
-import routing.DecisionEngineRouter;
 
 public class SlotTimeCheck {
 	

@@ -6,9 +6,10 @@
  */
 package routing.community;
 
-import java.util.*;
+import core.DTNHost;
 
-import core.*;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>

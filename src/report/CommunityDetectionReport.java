@@ -6,11 +6,16 @@
  */
 package report;
 
-import java.util.*;
-
-import core.*;
-import routing.*;
+import core.DTNHost;
+import core.SimScenario;
+import routing.DecisionEngineRouter;
+import routing.MessageRouter;
+import routing.RoutingDecisionEngine;
 import routing.community.CommunityDetectionEngine;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * <p>Reports the local communities at each node whenever the done() method is 

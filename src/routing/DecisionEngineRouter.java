@@ -22,31 +22,11 @@
 
 package routing;
 
-import java.util.*;
-
 import core.*;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-
 import routing.community.CommunityDetection;
-
-import core.Connection;
-import core.DTNHost;
-import core.Message;
-import core.Settings;
-import core.SimClock;
-import core.SlotTimeCheck;
-
 import util.Tuple;
+
+import java.util.*;
 
 public class DecisionEngineRouter extends ActiveRouter
 {

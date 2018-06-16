@@ -6,9 +6,11 @@
  */
 package routing.community;
 
-import java.util.*;
+import core.DTNHost;
+import core.Settings;
+import core.SimClock;
 
-import core.*;
+import java.util.*;
 
 /**
  * <p>Computes the global and local centrality of a node using the CWindow 
