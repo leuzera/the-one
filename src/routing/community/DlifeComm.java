@@ -238,7 +238,12 @@ public class DlifeComm
 		
 		return false; 
 	}
-	
+
+	@Override
+	public boolean shouldDeleteSentMessage(Message m, DTNHost otherHost, DTNHost thisHost) {
+		return false;
+	}
+
 	//ADDED Checks whether a nodes has a weight to a specific destination
 	public boolean checkWeightToDest(Map<DTNHost,Double> weightList, DTNHost dest){
 		if(weightList.get(dest)!=null){

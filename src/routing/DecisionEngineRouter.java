@@ -45,7 +45,8 @@ import core.Message;
 import core.Settings;
 import core.SimClock;
 import core.SlotTimeCheck;
-import core.Tuple;
+
+import util.Tuple;
 
 public class DecisionEngineRouter extends ActiveRouter
 {
@@ -426,7 +427,7 @@ public class DecisionEngineRouter extends ActiveRouter
 
 	@Override
 	 public int receiveMessage(Message m, DTNHost from){
-		int recvCheck = checkReceiving(m); 
+		int recvCheck = checkReceiving(m, from);
 		if (recvCheck != RCV_OK) {
 			return recvCheck;
 		}
