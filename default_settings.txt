@@ -134,12 +134,12 @@ Events1.prefix = M
 
 ## Movement model settings
 # seed for movement models' pseudo random number generator (default = 0)
-MovementModel.rngSeed = 1
-#MovementModel.rngSeed = [481;482;483;484;485;486;487;488;489;490;491;492;493;494;495;496;497;498;499;500;501;502;503;504;505;506;507;508;509;510]
+#MovementModel.rngSeed = 1
+MovementModel.rngSeed = [481;482;483;484;485;486;487;488;489;490;491;492;493;494;495;496;497;498;499;500;501;502;503;504;505;506;507;508;509;510]
 # World's size for Movement Models without implicit size (width, height; meters)
 MovementModel.worldSize = 4500, 3400
 # How long time to move hosts in the world before real simulation
-MovementModel.warmup = 0
+MovementModel.warmup = 1000
 
 ## Map based movement -movement model specific settings
 MapBasedMovement.nrofMapFiles = 4
@@ -158,17 +158,14 @@ PointsOfInterest.poiFile4 = data/shops.wkt
 ## Reports - all report names have to be valid report classes
 
 # how many reports to load
-Report.nrofReports = 7
+Report.nrofReports = 4
 # default directory of reports (can be overriden per Report with output setting)
-Report.reportDir = reports/
+Report.reportDir = reports/SprayAndWait/
 # Report classes to load
 Report.report1 = MessageStatsReport
 Report.report2 = MessageDelayReport
-Report.report3 = DeliveredMessagesReport
-Report.report4 = EventLogReport
-Report.report5 = MessageDeliveryReport
-Report.report6 = MessageReport
-Report.report7 = EnergyLevelReport
+Report.report3 = MessageDeliveryReport
+Report.report4 = EnergyLevelReport
 
 # Relatório a cada 10min
 Report.granularity = 600
