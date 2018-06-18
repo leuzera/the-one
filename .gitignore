@@ -94,6 +94,10 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+# Perl
+.idea/perl5local.xml
+.idea/perl5shared.xml
+_Deparsed_XSubs.pm
 
 # End of https://www.gitignore.io/api/java,intellij
 
