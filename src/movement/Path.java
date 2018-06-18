@@ -150,4 +150,21 @@ public class Path {
     public List<Double> getSpeeds() {
         return this.speeds;
     }
+
+    /**
+    * Returns the distance of path
+     *
+     * @return Distance as double
+     *
+     * @author Leonardo Fleury <leuzera>
+    * */
+    public double getDistance(){
+        double distance = 0;
+
+        for (int i = 1; i < coords.size(); i++){
+            distance += coords.get(i).distance(coords.get(i-1));
+        }
+
+        return distance;
+    }
 }
