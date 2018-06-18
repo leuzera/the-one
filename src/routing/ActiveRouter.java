@@ -679,4 +679,7 @@ public abstract class ActiveRouter extends MessageRouter {
         return top;
     }
 
+    public void reducePathEnergy(double valor){
+        energy.reducePathEnergy(valor);
+    }
 }
