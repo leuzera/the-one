@@ -449,6 +449,8 @@ public class DTNHost implements Comparable<DTNHost> {
      * should wait
      */
     private boolean setNextWaypoint() {
+        double distance;
+
         if (path == null) {
             path = movement.getPath();
         }
@@ -468,7 +470,10 @@ public class DTNHost implements Comparable<DTNHost> {
             }
         }
 
-        this.totalWalked += (path.getDistance()/100000.00);
+        distance = path.getDistance()/100000.00;
+        this.totalWalked += distance;
+        this.router.reducePathEnergy(distance);
+
         return true;
     }
 
