@@ -20,15 +20,15 @@ btInterface.scanInterval = 32
 
 # High speed, long range, interface for group 4
 highspeedInterface.type = SimpleBroadcastInterface
-highspeedInterface.transmitSpeed = 0.5M
-highspeedInterface.transmitRange = 10
+highspeedInterface.transmitSpeed = 1M
+highspeedInterface.transmitRange = 50
 highspeedInterface.scanInterval = 64
 
 ## Group-specific settings:
 
 # Common settings for all groups
 Group.movementModel = ShortestPathMapBasedMovement
-Group.router = SprayAndWaitRouter
+Group.router = ProphetRouter
 
 ##Begin energy module settings#####################################################################
 ##Important: The energy expenditure is assigned to groups and not to each diferent interface
@@ -46,6 +46,7 @@ Group.scanEnergy = 0
 Group.transmitEnergy = 0
 #Energy expenditure  per second when receiving data. (Different values ​​can be used by group)
 Group.scanResponseEnergy = 0
+Group.energyPerMeter = 0
 
 ##End energy module settings#####################################################################
 
@@ -54,7 +55,7 @@ Group.bufferSize = 5M
 Group.waitTime = 0, 120
 # All nodes have the bluetooth interface
 Group.nrofInterfaces = 1
-Group.interface1 = btInterface
+Group.interface1 = highspeedInterface
 # Walking speeds
 Group.speed = 0.5, 1.5
 # Message TTL of 300 minutes (5 hours)
@@ -68,6 +69,7 @@ Group1.nrofHosts = 20
 
 ## Eletric Vehicles
 Group2.groupID = ev
+# Group2.movementModel = CarMovement
 # cars can drive only on roads
 Group2.okMaps = 1
 # 10-50 km/h
@@ -83,6 +85,7 @@ Group2.transmitEnergy = 0.08
 #Energy expenditure  per second when receiving data. (Different values ​​can be used by group)
 Group2.scanResponseEnergy = 0.08
 Group2.nrofHosts = 20
+Group2.energyPerMeter = 230
 
 # Cars
 Group3.groupID = c
@@ -128,7 +131,7 @@ Events1.interval = 25, 35
 # Message sizes (500kB - 1MB)
 Events1.size = 500k,1M
 # range of message source/destination addresses
-Events1.hosts = 0, 50
+Events1.hosts = 0, 100
 # Message ID prefix
 Events1.prefix = M
 
@@ -158,14 +161,15 @@ PointsOfInterest.poiFile4 = data/shops.wkt
 ## Reports - all report names have to be valid report classes
 
 # how many reports to load
-Report.nrofReports = 4
+Report.nrofReports = 5
 # default directory of reports (can be overriden per Report with output setting)
-Report.reportDir = reports/SprayAndWait/
+Report.reportDir = reports/Prophet/
 # Report classes to load
 Report.report1 = MessageStatsReport
 Report.report2 = MessageDelayReport
 Report.report3 = MessageDeliveryReport
 Report.report4 = EnergyLevelReport
+Report.report5 = NodeTotalWalkedReport
 
 # Relatório a cada 10min
 Report.granularity = 600
