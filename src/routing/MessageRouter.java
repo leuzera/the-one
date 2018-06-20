@@ -735,4 +735,8 @@ public abstract class MessageRouter {
     public void reducePathEnergy(double distance){
         return;
     }
+
+    public boolean hasEnergy() {
+        return true;
+    }
 }

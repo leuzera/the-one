@@ -585,6 +585,7 @@ public abstract class ActiveRouter extends MessageRouter {
      *
      * @return has the node energy
      */
+    @Override
     public boolean hasEnergy() {
         return this.energy == null || this.energy.getEnergy() > 0;
     }
