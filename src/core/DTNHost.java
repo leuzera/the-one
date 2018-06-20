@@ -408,7 +408,7 @@ public class DTNHost implements Comparable<DTNHost> {
         double distance;
         double dx, dy;
 
-        if (!isMovementActive() || SimClock.getTime() < this.nextTimeToMove) {
+        if (!isMovementActive() || SimClock.getTime() < this.nextTimeToMove || !this.router.hasEnergy()) {
             return;
         }
         if (this.destination == null) {
