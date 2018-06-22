@@ -7,6 +7,7 @@ package core;
 import movement.MovementModel;
 import movement.Path;
 import routing.MessageRouter;
+import routing.util.EnergyModel;
 import routing.util.RoutingInfo;
 
 import java.util.ArrayList;
@@ -28,6 +29,7 @@ public class DTNHost implements Comparable<DTNHost> {
     private MessageRouter router;
     private MovementModel movement;
     private Path path;
+    private double totalWalked;
     private double speed;
     private double nextTimeToMove;
     private String name;
@@ -80,6 +82,8 @@ public class DTNHost implements Comparable<DTNHost> {
         this.movement.setComBus(comBus);
         this.movement.setHost(this);
         setRouter(mRouterProto.replicate());
+
+        this.totalWalked = 0;
 
         this.location = movement.getInitialLocation();
 
@@ -308,6 +312,13 @@ public class DTNHost implements Comparable<DTNHost> {
     }
 
     /**
+     * @return Total distance walked
+     */
+    public double totalWalked(){
+        return this.totalWalked;
+    }
+
+    /**
      * Force a connection event
      */
     public void forceConnection(DTNHost anotherHost, String interfaceId,
@@ -397,7 +408,7 @@ public class DTNHost implements Comparable<DTNHost> {
         double distance;
         double dx, dy;
 
-        if (!isMovementActive() || SimClock.getTime() < this.nextTimeToMove) {
+        if (!isMovementActive() || SimClock.getTime() < this.nextTimeToMove || !this.router.hasEnergy()) {
             return;
         }
         if (this.destination == null) {
@@ -424,6 +435,9 @@ public class DTNHost implements Comparable<DTNHost> {
                 this.location.getX());
         dy = (possibleMovement / distance) * (this.destination.getY() -
                 this.location.getY());
+
+        //this.totalWalked += (distance / 100000.0);
+
         this.location.translate(dx, dy);
     }
 
@@ -435,6 +449,8 @@ public class DTNHost implements Comparable<DTNHost> {
      * should wait
      */
     private boolean setNextWaypoint() {
+        double distance;
+
         if (path == null) {
             path = movement.getPath();
         }
@@ -453,6 +469,10 @@ public class DTNHost implements Comparable<DTNHost> {
                 l.newDestination(this, this.destination, this.speed);
             }
         }
+
+        distance = path.getDistance()/100000.00;
+        this.totalWalked += distance;
+        this.router.reducePathEnergy(distance);
 
         return true;
     }

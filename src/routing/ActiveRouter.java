@@ -585,6 +585,7 @@ public abstract class ActiveRouter extends MessageRouter {
      *
      * @return has the node energy
      */
+    @Override
     public boolean hasEnergy() {
         return this.energy == null || this.energy.getEnergy() > 0;
     }
@@ -679,4 +680,8 @@ public abstract class ActiveRouter extends MessageRouter {
         return top;
     }
 
+    @Override
+    public void reducePathEnergy(double distance){
+        energy.reducePathEnergy(distance);
+    }
 }

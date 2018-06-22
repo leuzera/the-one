@@ -731,4 +731,12 @@ public abstract class MessageRouter {
                 this.getHost().toString() + " with " + getNrofMessages()
                 + " messages";
     }
+
+    public void reducePathEnergy(double distance){
+        return;
+    }
+
+    public boolean hasEnergy() {
+        return true;
+    }
 }

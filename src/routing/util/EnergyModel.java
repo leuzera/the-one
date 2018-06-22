@@ -39,6 +39,7 @@ public class EnergyModel implements ModuleCommunicationListener {
      */
     public static final String TRANSMIT_ENERGY_S = "transmitEnergy";
 
+    public static final String ENERGY_PER_METER_S = "energyPerKm";
     /**
      * Energy update warmup period -setting id ({@value}). Defines the
      * simulation time after which the energy level starts to decrease due to
@@ -80,6 +81,9 @@ public class EnergyModel implements ModuleCommunicationListener {
      * sim time of the last energy updated
      */
     private double lastUpdate;
+
+    private double energyPerKm;
+
     private ModuleCommunicationBus comBus;
     private static Random rng = null;
 
@@ -100,6 +104,7 @@ public class EnergyModel implements ModuleCommunicationListener {
         this.scanEnergy = s.getDouble(SCAN_ENERGY_S);
         this.transmitEnergy = s.getDouble(TRANSMIT_ENERGY_S);
         this.scanResponseEnergy = s.getDouble(SCAN_RSP_ENERGY_S);
+        this.energyPerKm = s.getDouble(ENERGY_PER_METER_S);
 
         if (s.contains(WARMUP_S)) {
             this.warmupTime = s.getInt(WARMUP_S);
@@ -124,6 +129,7 @@ public class EnergyModel implements ModuleCommunicationListener {
         this.transmitEnergy = proto.transmitEnergy;
         this.warmupTime = proto.warmupTime;
         this.scanResponseEnergy = proto.scanResponseEnergy;
+        this.energyPerKm = proto.energyPerKm;
         this.comBus = null;
         this.lastUpdate = 0;
     }
@@ -232,6 +238,10 @@ public class EnergyModel implements ModuleCommunicationListener {
      */
     public void moduleValueChanged(String key, Object newValue) {
         this.currentEnergy = (Double) newValue;
+    }
+
+    public void reducePathEnergy(double distance){
+        reduceEnergy(distance * energyPerKm);
     }
 
 }
