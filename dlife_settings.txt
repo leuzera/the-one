@@ -1,0 +1,22 @@
+#
+# Default settings for the simulation
+#
+
+## Scenario settings
+Scenario.name = dLife_%%MovementModel.rngSeed%%
+
+## Group-specific settings:
+
+Group.router = DecisionEngineRouter
+
+## Reports - all report names have to be valid report classes
+
+# default directory of reports (can be overriden per Report with output setting)
+Report.reportDir = reports/dLife/
+
+## Default settings for some routers settings
+DecisionEngineRouter.decisionEngine = community.Dlife
+DecisionEngineRouter.communityDetectAlg = routing.community.KCliqueCommunityDetection
+DecisionEngineRouter.K = 5
+DecisionEngineRouter.familiarThreshold = 700
+DecisionEngineRouter.centralityAlg = routing.community.CWindowCentrality

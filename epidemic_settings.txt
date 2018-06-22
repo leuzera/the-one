@@ -1,0 +1,15 @@
+#
+# Default settings for the simulation
+#
+
+## Scenario settings
+Scenario.name = epidemic_%%MovementModel.rngSeed%%
+
+## Group-specific settings:
+
+Group.router = EpidemicRouter
+
+## Reports - all report names have to be valid report classes
+
+# default directory of reports (can be overridden per Report with output setting)
+Report.reportDir = reports/Epidemic/
