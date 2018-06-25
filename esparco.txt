@@ -4,3 +4,5 @@ Group3.nrofHosts = 30
 Group4.nrofHosts = 4
 Group5.nrofHosts = 4
 Group6.nrofHosts = 4
+
+Events1.hosts = 0,76 
