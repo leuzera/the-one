@@ -1,0 +1,6 @@
+Group1.nrofHosts = 120
+Group2.nrofHosts = 180
+Group3.nrofHosts = 240
+Group4.nrofHosts = 6
+Group5.nrofHosts = 6
+Group6.nrofHosts = 6
