@@ -19,9 +19,6 @@ with open(sys.argv[1], 'r') as in_file:
         if line[0] == '[':
             tempo = line[1:-1]
         else:
-            out_file.write('{0} {1}\n'.format(tempo, line))
+            out_file.write('{0};{1}\n'.format(tempo, line.replace(" ", ";")))
 
 out_file.close()
-
-
-
