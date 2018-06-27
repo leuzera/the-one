@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 
-PROTOCOLS=(epidemic.txt prophet.txt sprayandwait.txt dlife.txt)
-SCENERYS=(esparso.txt denso.txt)
+PROTOCOLS=(epidemic prophet sprayandwait dlife)
+SCENERYS=(esparso denso)
 NRO_BATCH=1
 
 for protocol in ${PROTOCOLS[@]}; do
     for scenery in ${SCENERYS[@]}; do
-        ./one.sh -b ${NRO_BATCH} basic_settings.txt ${protocol} ${scenery} > /dev/null 2>&1 &
+        ./one.sh -b ${NRO_BATCH} basic_settings.txt ${protocol}.txt ${scenery}.txt > /tmp/${protocol}_${scenery} 2>&1 &
+        echo "Running ${protocol} ${scenery}"
     done
 done
 
 wait
-echo "\nAll simulations ended\n"
+echo "All simulations ended"
