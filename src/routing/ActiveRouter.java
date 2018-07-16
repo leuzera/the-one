@@ -682,6 +682,8 @@ public abstract class ActiveRouter extends MessageRouter {
 
     @Override
     public void reducePathEnergy(double distance){
-        energy.reducePathEnergy(distance);
+        if (!this.hasEnergy()){
+            energy.reducePathEnergy(distance);
+        }
     }
 }

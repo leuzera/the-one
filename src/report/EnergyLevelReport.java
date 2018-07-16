@@ -24,8 +24,9 @@ public class EnergyLevelReport extends SnapshotReport
         Double value = (Double) h.getComBus().
                 getProperty(routing.util.EnergyModel.ENERGY_VALUE_ID);
         if (value == null) {
-            throw new SimError("Host " + h +
-                    " is not using energy model");
+            //throw new SimError("Host " + h +
+            //        " is not using energy model");
+            return;
         }
         write(h.toString() + " " + format(value));
     }
