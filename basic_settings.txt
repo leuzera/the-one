@@ -34,18 +34,18 @@ Group.movementModel = ShortestPathMapBasedMovement
 ##Default settings for energy module (When not changed does not consider energy expenditure)
 
 # Interval energy recharge in seconds (2419200 = recharge every 2419200 seconds). Different values ​​can be used by group
-Group.rechargeEnergy = 0
+#Group.rechargeEnergy = 0
 #range of random recharge in seconds. (0, 0 = no random recharge. 0, 1000 = random recharge for each node in this range). Different values ​​can be used by #group.
-Group.rechargeEnergyRandom = 0, 0
+#Group.rechargeEnergyRandom = 0, 0
 # Initial value of energy - batery full. (Different values ​​can be used by group)
-Group.initialEnergy = 1
+#Group.initialEnergy = 1
 # Energy expenditure by scan. (Different values ​​can be used by group)
-Group.scanEnergy = 0
+#Group.scanEnergy = 0
 # Energy expenditure per second when sending data. (Different values ​​can be used by group)
-Group.transmitEnergy = 0
+#Group.transmitEnergy = 0
 #Energy expenditure  per second when receiving data. (Different values ​​can be used by group)
-Group.scanResponseEnergy = 0
-Group.energyPerKm = 0
+#Group.scanResponseEnergy = 0
+#Group.energyPerKm = 0
 
 ##End energy module settings#####################################################################
 
